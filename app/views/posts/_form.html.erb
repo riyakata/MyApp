@@ -1,0 +1,23 @@
+
+<%= form_for(@post) do |f| %>       #explicitly ties the form to a particular model instance
+
+        <div class="field">
+          <%= f.label :userId %>
+          <%= f.text_field :userId %>
+        </div>
+
+        <div class="field">
+          <%= f.label :title %>
+          <%= f.text_field :title %>
+        </div>
+
+        <div class="field">
+          <%= f.label :body %>
+          <%= f.text_field :body %>
+        </div>
+
+        <div class="action">
+          <%= f.submit %>
+        </div>
+
+<% end %>

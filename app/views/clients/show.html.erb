@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @client.Name %>
+</p>
+
+<p>
+  <b>Droptime:</b>
+  <%= @client.droptime %>
+</p>
+
+<p>
+  <b>Droparea:</b>
+  <%= @client.dropArea %>
+</p>
+
+
+<%= link_to 'Edit', edit_client_path(@client) %> |
+<%= link_to 'Back', clients_path %>
